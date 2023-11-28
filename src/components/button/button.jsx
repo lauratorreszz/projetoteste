@@ -1,13 +1,12 @@
-import React from 'react';
-
-function MyButton() {
-    function handleClick() {
-        alert('Button clicked!');
+function Button() {
+    function meuButton(){
+        console.log("Opa, fui ativado")
     }
-
     return (
-        <button onClick={handleClick}>Click me</button>
-    );
+      <div>
+        <button onClick={meuButton}>Disparar</button>
+      </div>
+    )
 }
 
-export default MyButton;
+export default Button;

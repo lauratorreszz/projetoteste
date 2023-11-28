@@ -20,10 +20,14 @@ const Navbar = () => {
           <p><a href="#blog">aaaaa</a></p>
         </div>
       </div>
+        <div>
+       </div>
+
       <div className="DUCK__navbar-sign">
         <p>Log in</p>
         <button type="button">Cadastrar-se</button>
       </div>
+
       <div className="DUCK__navbar-menu">
         {toggleMenu
           ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)} />
@@ -37,15 +41,18 @@ const Navbar = () => {
             <p><a href="#features">aaaaa</a></p>
             <p><a href="#blog">aaaaa</a></p>
           </div>
+
           <div className="DUCK__navbar-menu_container-links-sign">
             <p>Log in</p>
-            <button type="button">Cadastrar-se</button>
+            <button type="button" >Cadastrar-se</button>
           </div>
         </div>
+        
         )}
       </div>
     </div>
   );
 };
+
 
 export default Navbar;
